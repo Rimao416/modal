@@ -1,0 +1,70 @@
+#moddle{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 800px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    margin-top: 45px;
+    
+}
+#moddle.active{
+    transition: all 0.5s ease-out;
+    opacity: 1;
+    margin-top: 0;
+
+}
+#container.blur{
+    filter: blur(5px);
+}
+
+.box
+{
+ width:100%;
+ max-width:800px;
+ background-color:#f9f9f9;
+ border:1px solid #ccc;
+ border-radius:5px;
+ padding:16px;
+ margin:0 auto;
+}
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+.parsley-type, .parsley-required, .parsley-equalto{
+ color:#ff0000;
+}
